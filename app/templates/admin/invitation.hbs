@@ -1,0 +1,21 @@
+<h2>Received invitations</h2>
+
+
+<table class="table table-bordered table-striped">
+	
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		{{#each model as |invitation|}}
+			<tr>
+				<th>{{ invitation.id }}</th>
+				<td>{{ invitation.email }}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
