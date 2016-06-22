@@ -7,10 +7,15 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.route('contact');
+  this.route('messages');
 
   this.route('admin', function() {
     this.route('invitation');
+    this.route('messages');
+  });
+
+  this.route("libraries", function(){
+  	this.route("new");
   });
 });
 
